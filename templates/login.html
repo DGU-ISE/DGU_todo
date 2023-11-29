@@ -1,56 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Html Generated</title>
-    <meta name="description" content="Figma htmlGenerator">
-    <meta name="author" content="htmlGenerator">
-    <link href="https://fonts.googleapis.com/css?family=Kokonor&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
-    <!-- External stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DongYouth/login</title>
     <style>
-        /* Internal styles */
-        body {
-            background: #E5E5E5;
-        }
+        @import url("../static/css/login.css");
+        @import url("../static/css/default.css");
     </style>
 </head>
-
 <body>
-    <!-- Main container -->
-    <div class="e1_2">
-        <!-- Figma-generated elements -->
-        <div class="e117_11"></div>
-        <div class="e117_2"></div>
-        <div class="e117_3"></div>
-        <div class="e117_7">
-            <!-- Text content -->
-            <span class="e117_6" onclick="goToSecondPage()">회원정보가 없으신가요?</span>
-        </div>
-        <div class="e117_8">
-            <div class="e117_9"></div>
-            <!-- Login button with onclick event -->
-            <span class="e117_10" onclick="goToThirdPage()">로그인</span>
-        </div>
-        <div class="e117_13"></div>
-        <!-- Main title -->
-        <span class="e2_3">Dongguk To-Do List</span>
-        <div class="e117_19"></div>
-    </div>
-
-    <script>
-        // JavaScript function to navigate to third.html
-        function goToSecondPage() {
-            // Redirect to third.html
-            window.location.href = "second.html";
-        }
-        function goToThirdPage() {
-            // Redirect to third.html
-            window.location.href = "third.html";
-        }
-    </script>
+    <aside>
+        <img id = "mainimage"src="../images/메인화면.png" alt="">
+        <p id="logo">Dongguk <br> To-do list</p>
+    </aside>
+    <main>
+        
+        <p id="login"><img src="../images/학교로고.png" alt=""></p>
+        <p id="comment">Join the club and Communicate with your member in club!</p>
+        <form id="loginform"action="">
+            <p id="id">Email Id</p>
+            <input id="inid"type="email" required></input>
+            <p id="pw">Password</p>
+            <input id="password"type="password" required>
+            <label for="cb"><input id="cb"type="checkbox"><p id="checkbox">Remember me</p></label>
+            <button id ="imgbutton"type="submit"><img src="../images/loginbutton.png" alt=""></button>
+            <p id="sign">not registered yet?</p>
+            <a id="asign"href="">Create an account</a>
+        </form>
+        <script src="js/login.js"></script>
+    </main>
 </body>
-
 </html>
