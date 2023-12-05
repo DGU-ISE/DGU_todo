@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="1" style="width: 1200px; height: 1032px; position: relative; background: white">
+        <div >Dongguk</span><span style="color: rgba(0, 0, 0, 0.20); font-size: 50px; font-family: Mali; font-weight: 400; word-wrap: break-word"> <br/>To-Do List</span></div>
+        <div class="Rectangle17"></div>
+        <div class="Group8">
+          <div class="Rectangle7"></div>
+          <div class="Category1">Category1</div>
+        </div>
+        <div class="Group9" >
+          <div class="Rectangle8"></div>
+          <div class="Category2">Category2</div>
+        </div>
+        <div class="Group10" >
+          <div class="Rectangle9" ></div>
+          <div class="Category3" >Category3</div>
+          <div class="Category3">Category3</div>
+        </div>
+        <div >선택</div>
+        <div class="Rectangle14"></div>
+        <div class="Group5" >
+          <div class="Rectangle12" ></div>
+          <div class="Ellipse2"></div>
+          <div class="Ellipse3" ></div>
+          <div class="Ellipse5" ></div>
+        </div>
+        <div class="Group18">
+          <div class="Rectangle12" ></div>
+          <div class="Ellipse2" ></div>
+          <div class="Ellipse3" ></div>
+          <div class="Ellipse5" ></div>
+        </div>
+        <div class="Group7" >
+          <div class="Rectangle12" ></div>
+          <div class="Ellipse2" ></div>
+          <div class="Ellipse3" ></div>
+          <div class="Ellipse5" ></div>
+        </div>
+        <div class="Ellipse5"></div>
+        <div class="Group16" >
+          <div class="Rectangle16" ></div>
+          <form action="{{ url_for('signup_route') }}" method="POST">
+            <p>이름: </p>
+            <input type="text" name="name" value="{{ user.name }}">
+            <p>닉네임: </p>
+            <input type="text" name="nickname" value="{{ user.nickname }}">
+            <p>소개: </p>
+            <input type="text" name="introduction" value="{{ user.introduction }}">
+            <br><br>
+            <p>내 카테고리 수정</p>
+            <button>Category1</button><button>Category2</button><button>Category3</button>
+            <input type="submit" value="저장">
+        </form>
+          </div>
+        </div>
+        <div class="Group17" >
+          <div class="Group11" >
+            <div class="Ellipse8" ></div>
+            <div class="Ellipse9"></div>
+            <div class="Ellipse10"></div>
+            <div class="Ellipse11" ></div>
+            <div class="Ellipse12" ></div>
+            <div class="Ellipse13" ></div>
+            <div class="Ellipse14" ></div>
+          </div>
+          <div >일   월   화   수   목   금   토 </div>
+        </div>
+        <img class="Image4"  src="pathe.jpg" />
+      </div>    
+</body>
+</html>

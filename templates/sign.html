@@ -2,25 +2,36 @@
             <head>
                 <meta charset="utf-8">
             
-                <title>Html Generated</title>
+                <title>Dongguk To-do singuppage</title>
                 <meta name="description" content="Figma htmlGenerator">
                 <meta name="author" content="htmlGenerator">
-                <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-
-                <link rel="stylesheet" href="static/css/styles.css">
-                
-                <style>
-                /*
-                    Figma Background for illustrative/preview purposes only.
-                    You can remove this style tag with no consequence
-                */
-                body {background: #E5E5E5; }
-                </style>
+                <link rel="stylesheet" href="../static/css/sign.css">
             
             </head>
             
             <body>
-                <div class=e124_2><div class=e124_9><div  class="e124_10"></div><span  class="e124_11">회원가입</span></div><div class=e127_2><div  class="e127_3"></div><span  class="e127_4">가입취소</span></div><div  class="e124_15"></div><span  class="e122_21">회원가입</span><span  class="e122_25">회원이 되어 투두리스트를 경험해 보세요! </span><div  class="e124_7"></div><div  class="e124_8"></div><div  class="e122_27"></div><span  class="e122_22">아이디</span><span  class="e122_26">비밀번호</span><span  class="e122_28">비밀번호 확인</span><div  class="e122_29"></div><span  class="e122_30">이름</span><div  class="e122_31"></div><span  class="e122_32">닉네임</span></div>
+               <header>
+                    <p style="font-size: 50px;">회원가입</p> 
+                    <p style="color:rgb(44, 44, 44);  font-size: 20px;">회원이 되어 투두리스트를 경험해 보세요! </p>
+               </header>
+               <br>
+               <main>
+                    <form action="{{ url_for('signup_route') }}"action="POST">
+                        <p>아이디</p>
+                        <input type="text">
+                        <p>비밀번호</p>
+                        <input type="password">
+                        <p>비밀번호 확인</p>
+                        <input type="password">
+                        <p>이름</p>
+                        <input type="text">
+                        <p>닉네임</p>
+                        <input type="text"> <br><br>
+                        <button type="submit">회원가입</button><button type = "reset">가입 취소</button>
+                    </form>
+               </main>
+               <footer>
+                    <img src="../images/학교로고.png" alt="">
+               </footer>
             </body>
             </html>
