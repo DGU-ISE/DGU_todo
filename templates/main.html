@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>To-Do List</title>
-    <meta name="description" content="Figma htmlGenerator">
-    <meta name="author" content="htmlGenerator">
-    <link href="https://fonts.googleapis.com/css?family=Kokonor&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
-    <!-- External stylesheet -->
-    <link rel="stylesheet" href="static/css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DongYouth/login</title>
     <style>
-        /* Internal styles */
-        body {
-            background: #E5E5E5;
-        }
-
-        /* Add any additional internal styles if needed */
+        @import url("../static/css/login.css");
+        @import url("../static/css/default.css");
     </style>
 </head>
-
 <body>
-    <!-- Main container -->
-    <div class="e140_11">
-        <span class="e140_12">이름: 전병현</span>
-        <span class="e140_35">닉네임: JBH</span>
-        <span class="e157_36">내 카테고리 수정:</span>
-        <div class="e140_15"></div>
-    </div>
+    <main>
+        
+        <p id="image_hight"><img src="../images/학교로고.png" alt=""></p>
+        <p id="slogan">투두리스트!</p>
+        <p id="minislogan">회원이 되어 투두리스트를 경험해보세요!</p>
 
-    <div class="e140_32">
-        <div class="e140_33"></div>
-        <span class="e140_34">사진 변경</span>
-    </div>
-
-    <div class="e140_38">
-        <div class="e140_39"></div>
-        <span class="e140_40">저장하기</span>
-    </div>
-
-    <div class="e155_2"></div>
-
-    <span class="e155_3">내일만 사는 놈은 오늘만 사는 놈에게 죽는다.</span>
-
-    <div class="e157_37"></div>
-    <div class="e157_38"></div>
-    <div class="e157_39"></div>
-
-    <span class="e157_40">Category1</span>
-    <span class="e157_42">Category2</span>
-    <span class="e157_43">Category3</span>
-    <span class="e157_44">Category3</span>
-</div>
-
-<script>
-    // Add any additional JavaScript functions or scripts if needed
-</script>
-
+        <form id="loginform"action="">
+            <p id="id1">아이디</p>
+            <input id="innid"type="email" required></input>
+            <p id="pw1">비밀번호</p>
+            <input id="password1"type="password" required></input>
+            <p id="ps1">비밀번호 확인</p>
+            <input id="ps"type="Password sub" required></input>
+            <p id="rn1">이름</p>
+            <input id="rn"type="realname" required></input>
+            <p id="nn1">닉네임</p>
+            <input id="nn"type="nickname" required></input>
+            <a href="sign.html">
+                    <button id="imgbutton_main" type="button">
+                    <img src="../images/loginbutton.png" alt="">
+                    </button>
+        </form>
+        <script src="js/login.js">
+            
+        </script>
+    </main>
 </body>
-
 </html>
