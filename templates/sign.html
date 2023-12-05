@@ -1,0 +1,37 @@
+    <html lang="en">
+            <head>
+                <meta charset="utf-8">
+            
+                <title>Dongguk To-do singuppage</title>
+                <meta name="description" content="Figma htmlGenerator">
+                <meta name="author" content="htmlGenerator">
+                <link rel="stylesheet" href="../static/css/sign.css">
+            
+            </head>
+            
+            <body>
+               <header>
+                    <p style="font-size: 50px;">회원가입</p> 
+                    <p style="color:rgb(44, 44, 44);  font-size: 20px;">회원이 되어 투두리스트를 경험해 보세요! </p>
+               </header>
+               <br>
+               <main>
+                    <form action="{{ url_for('signup_route') }}"action="POST">
+                        <p>아이디</p>
+                        <input type="text">
+                        <p>비밀번호</p>
+                        <input type="password">
+                        <p>비밀번호 확인</p>
+                        <input type="password">
+                        <p>이름</p>
+                        <input type="text">
+                        <p>닉네임</p>
+                        <input type="text"> <br><br>
+                        <button type="submit">회원가입</button><button type = "reset">가입 취소</button>
+                    </form>
+               </main>
+               <footer>
+                    <img src="../images/학교로고.png" alt="">
+               </footer>
+            </body>
+            </html>

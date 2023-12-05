@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/sign.css">
+</head>
+<body>
+    <header>
+        <p style="font-size: 50px;">Dongguk</p>
+        <p style="font-size: 30px;">To-Do List</p>
+    </header>
+    <main>
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <img src="path_to_image.jpg" alt="사진"><br>
+                <button>사진 변경</button>
+            </div>
+            <div style="flex: 1;">
+                <form action="{{ url_for('signup_route') }}" method="POST">
+                    <p>이름: </p>
+                    <input type="text" name="name" value="{{ user.name }}">
+                    <p>닉네임: </p>
+                    <input type="text" name="nickname" value="{{ user.nickname }}">
+                    <p>소개: </p>
+                    <input type="text" name="introduction" value="{{ user.introduction }}">
+                    <br><br>
+                    <p>내 카테고리 수정</p>
+                    <button>Category1</button><button>Category2</button><button>Category3</button>
+                    <input type="submit" value="저장">
+                </form>
+            </div>
+        </div>
+        <button type="submit">저장하기</button>
+    </main>
+        
+    </main>
+</body>
+</html>

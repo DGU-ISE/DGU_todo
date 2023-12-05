@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DongYouth/login</title>
+    <style>
+        @import url("../static/css/login.css");
+        @import url("../static/css/default.css");
+    </style>
+</head>
+<body>
+    
+    <aside>
+        <img id = "mainimage"src="../images/메인화면.png" alt="">
+        <p id="logo">Dongguk <br> To-do list</p>
+    </aside>
+    <main>
+        
+        <p id="login"><img src="../images/학교로고.png" alt=""></p>
+        <form id="loginform"action="{{ url_for('login_route') }}" method="post">
+            <p id="id">Email Id</p>
+            <input id="inid"type="email" required></input>
+            <p id="pw">Password</p>
+            <input id="password"type="password" required>
+            <label for="cb"><input id="cb"type="checkbox"><p id="checkbox">Remember me</p></label>
+            <button id ="imgbutton"type="submit"><img src="../images/loginbutton.png" alt=""></button>
+            <p id="sign">not registered yet?</p>
+            <a id="asign" href="{{ url_for('register_route') }}">Create an account</a>
+        </form>
+    </main>
+</body>
+</html>
